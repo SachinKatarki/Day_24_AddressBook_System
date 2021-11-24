@@ -92,5 +92,7 @@ public class Contacts {
 	    protected void remove(Contacts contacts) {
 
 	    }
+	    
+	  }
 
-}
+
