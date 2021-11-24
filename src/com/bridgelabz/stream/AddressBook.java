@@ -130,6 +130,10 @@ public class AddressBook {
 	        Collections.sort(list, Sort.compareCity);
 	        
 	    }
+	    
+	    public void sortState() {
+	        Collections.sort(list, Sort.compareState);
+	    }
 	    @Override
 	    public String toString() {
 	        return "AddressBook{" +
