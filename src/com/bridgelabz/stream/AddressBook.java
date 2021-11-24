@@ -59,7 +59,7 @@ public class AddressBook {
 	        String email = scan.next();
 	        contacts.setEmail(email);
 	        list.add(contacts);
-	        print();
+	        
 	    }
 
 	    public void edit() {
@@ -122,4 +122,10 @@ public class AddressBook {
 		}
 
 	  }
+	    public void print() {
+	        Iterator<Contacts> it = list.iterator();
+	        while (it.hasNext()) {
+	            System.out.println(it.next());
+	        }
+	    }
     }
