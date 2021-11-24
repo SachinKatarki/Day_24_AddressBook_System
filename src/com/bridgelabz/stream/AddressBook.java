@@ -1,9 +1,6 @@
 package com.bridgelabz.stream;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class AddressBook {
 	 Scanner scan = new Scanner(System.in);
@@ -127,6 +124,11 @@ public class AddressBook {
 	        while (it.hasNext()) {
 	            System.out.println(it.next());
 	        }
+	    }
+	    
+	    public void sortCity() {
+	        Collections.sort(list, Sort.compareCity);
+	        
 	    }
 	    @Override
 	    public String toString() {
