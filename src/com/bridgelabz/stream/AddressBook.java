@@ -131,6 +131,10 @@ public class AddressBook {
 	        System.out.println(total);
 	    }
 	    
+	    public void sortByFirstName() {
+	        Collections.sort(list, Sort.compareFirstName);
+	    }
+	    
 	    public void sortCity() {
 	        Collections.sort(list, Sort.compareCity);
 	        

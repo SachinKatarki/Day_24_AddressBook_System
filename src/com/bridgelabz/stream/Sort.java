@@ -13,5 +13,10 @@ public class Sort {
             return one.getState().compareTo(two.getState());
         }
     };
+	public static Comparator<Contacts> compareFirstName = new Comparator<>() {
+        public int compare(Contacts one, Contacts two) {
+            return one.getFirstName().compareTo(two.getFirstName());
+        }
+    };
 
 }
