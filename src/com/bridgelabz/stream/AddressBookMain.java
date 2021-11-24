@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class AddressBookMain {
 	 static Scanner scan = new Scanner(System.in);
-
-	    public static void main(String[] args) {
-	        System.out.println("Welcome into the Address Book System in Stream!!!!");
+	 
+	 public static void main(String[] args) {
+	        System.out.println("Welcome to Address Book System");
 	        Map<String, AddressBook> map = new HashMap<>();
 	        System.out.println("Enter Number of address book you want to add");
-	        int count = scan.nextInt();
-	        int i = 0;
+	        Integer count = scan.nextInt();
+	        Integer i = 0;
 	        while (i < count) {
-	            System.out.println("Enter book name");
+	            System.out.println("Enter  book name");
 	            String bookName = scan.next();
 	            AddressBook addressBook = new AddressBook();
 	            addressBook.operation();
@@ -22,6 +22,9 @@ public class AddressBookMain {
 	            i++;
 	        }
 	        System.out.println(map);
+
+
+	    
 	    }
 
 }

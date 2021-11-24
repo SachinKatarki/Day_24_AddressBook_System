@@ -128,4 +128,10 @@ public class AddressBook {
 	            System.out.println(it.next());
 	        }
 	    }
+	    @Override
+	    public String toString() {
+	        return "AddressBook{" +
+	                "list=" + list +
+	                '}';
     }
+}
